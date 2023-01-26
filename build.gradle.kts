@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.8.0"
+    application
 }
 
 group = "io.github.paulgriffith"
@@ -20,6 +21,12 @@ repositories {
     maven {
         url = uri("https://nexus.inductiveautomation.com/repository/inductiveautomation-thirdparty/")
     }
+    maven {
+        url = uri("https://jitpack.io")
+        content {
+            includeGroup("com.github.Dansoftowner")
+        }
+    }
 }
 
 dependencies {
@@ -28,4 +35,8 @@ dependencies {
 
 kotlin {
     jvmToolchain(17)
+}
+
+application {
+    mainClass.set("io.github.paulgriffith.kindling.MainPanel")
 }
