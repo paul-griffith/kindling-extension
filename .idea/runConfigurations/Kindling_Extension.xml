@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Kindling-Extension" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="io.github.paulgriffith.kindling.MainPanel" />
+    <module name="kindling-extension.main" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
